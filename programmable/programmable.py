@@ -13,7 +13,7 @@ def main():
     ]
 
     try:
-        result = subprocess.run(command, capture_output=True, text=True)
+        result = subprocess.run(command, capture_output=True, text=True, shell=True)
 
         print(result.stdout)
 
